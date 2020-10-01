@@ -1,0 +1,8 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  // Supplying the class-properties plugin creates an error because parcel already uses it
+  // I have added another instance of the plugin for linting purposes
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", {}, "class-fields for linting"]
+  ]
+}
